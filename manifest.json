@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "nyt-bypass",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://cooking.nytimes.com/recipes/*"],
+      "run_at": "document_idle",
+      "js": ["jquery.min.js", "content.js"]
+    }
+  ]
+}
