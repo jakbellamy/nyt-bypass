@@ -1,2 +1,4 @@
-jQuery(".nytc---modal-window---windowContainer.nytc---modal-window---isShown.nytc---shared---blackBG").remove();
-jQuery("body").css('overflow', 'auto');
+setTimeout(function(){
+  jQuery(".nytc---modal-window---windowContainer.nytc---modal-window---isShown.nytc---shared---blackBG").remove();
+  jQuery("body").css('overflow', 'auto');
+}, 800)
