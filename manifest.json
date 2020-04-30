@@ -4,7 +4,7 @@
   "version": "0.1",
   "content_scripts": [
     {
-      "matches": ["https://cooking.nytimes.com/recipes/*"],
+      "matches": ["https://cooking.nytimes.com/recipes/*", "https://www.nytimes.com/*"],
       "run_at": "document_idle",
       "js": ["jquery.min.js", "content.js"]
     }
