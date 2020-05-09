@@ -8,4 +8,5 @@ INSTALL
   5. that's it. now when you click on a recipe from the nyt site, the paywall will be removed
 
 ------- contact info -------
+
 email: jakbellamy@gmail.com
