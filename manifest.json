@@ -6,7 +6,7 @@
     {
       "matches": ["https://cooking.nytimes.com/recipes/*", "https://www.nytimes.com/*"],
       "run_at": "document_idle",
-      "js": ["jquery.min.js", "content.js"]
+      "js": ["content.js"]
     }
   ]
 }
