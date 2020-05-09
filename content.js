@@ -1,7 +1,7 @@
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 const hijackDOM = (interval) => {
-	setTimeout(function(){
+	wait(interval).then(() => {
 		//NYT COOKING
 		if(document.querySelector(".nytc---modal-window---windowContainer.nytc---modal-window---isShown.nytc---shared---blackBG")){
 			document.querySelector(".nytc---modal-window---windowContainer.nytc---modal-window---isShown.nytc---shared---blackBG").remove();
@@ -19,18 +19,18 @@ const hijackDOM = (interval) => {
 		if(document.querySelector(".css-mcm29f")){
 			document.querySelector(".css-mcm29f").style.overflow = 'auto';
 		};
-	}, interval);
+	}).catch(err => console.log(err));
 	wait(interval + 500).then(() => {
 		console.clear();
 		console.log(`Paywall Removed! Stopping Forced DOM Loads...`);
-	})
+	}).catch(err => console.log(err));
 };
 
 const killDOM = (interval) => {
 	wait(interval).then(() => {
 		console.log('DOM Activity Successfully Killed! Happy Browsing :)');
 		window.stop();
-	});
+	}).catch(err => console.log(err));
 };
 
 hijackDOM(800);
