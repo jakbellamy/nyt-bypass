@@ -22,7 +22,7 @@ const hijackDOM = (interval) => {
 	}, interval);
 	wait(interval + 500).then(() => {
 		console.clear();
-		console.log(`Paywall Removed! \b Stopping Forced DOM Loads...`);
+		console.log(`Paywall Removed! Stopping Forced DOM Loads...`);
 	})
 };
 
